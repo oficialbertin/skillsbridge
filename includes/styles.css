@@ -1,0 +1,77 @@
+/* /includes/styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.jumbotron {
+    background: url('/images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+
+/* /css/style.css */
+
+/* Ensure the navbar-brand stands out */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Modify the navbar background if desired */
+.navbar {
+    background-color: #f8f9fa; /* Light background color, you can adjust */
+}
+
+/* Modify the jumbotron background */
+.jumbotron {
+    background: url('/images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    height: 400px; /* Adjust height as needed */
+}
+
+/* Additional customizations */
+
+
+/* Style for the loading spinner */
+.loading-spinner {
+    position: fixed; /* Position it fixed so it covers the entire screen */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background overlay */
+    z-index: 9999; /* Ensure it's on top of other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible; /* Show the spinner by default */
+}
+
+/* Spinner animation */
+.spinner {
+    border: 8px solid #f3f3f3; /* Light grey border */
+    border-top: 8px solid #3498db; /* Blue top border */
+    border-radius: 50%; /* Circular shape */
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite; /* Spinning animation */
+}
+
+/* Animation keyframes for the spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
